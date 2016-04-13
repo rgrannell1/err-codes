@@ -8,307 +8,307 @@
 const constants = {
 	libuvErrorMap: [
 		{
-			code: E2BIG,
+			code: 'E2BIG',
 			message: "argument list too long"
 		},
 		{
-			code: EACCES,
+			code: 'EACCES',
 			message: "permission denied"
 		},
 		{
-			code: EADDRINUSE,
+			code: 'EADDRINUSE',
 			message: "address already in use"
 		},
 		{
-			code: EADDRNOTAVAIL,
+			code: 'EADDRNOTAVAIL',
 			message: "address not available"
 		},
 		{
-			code: EAFNOSUPPORT,
+			code: 'EAFNOSUPPORT',
 			message: "address family not supported"
 		},
 		{
-			code: EAGAIN,
+			code: 'EAGAIN',
 			message: "resource temporarily unavailable"
 		},
 		{
-			code: EAI_ADDRFAMILY,
+			code: 'EAI_ADDRFAMILY',
 			message: "address family not supported"
 		},
 		{
-			code: EAI_AGAIN,
+			code: 'EAI_AGAIN',
 			message: "temporary failure"
 		},
 		{
-			code: EAI_BADFLAGS,
+			code: 'EAI_BADFLAGS',
 			message: "bad ai_flags value"
 		},
 		{
-			code: EAI_BADHINTS,
+			code: 'EAI_BADHINTS',
 			message: "invalid value for hints"
 		},
 		{
-			code: EAI_CANCELED,
+			code: 'EAI_CANCELED',
 			message: "request canceled"
 		},
 		{
-			code: EAI_FAIL,
+			code: 'EAI_FAIL',
 			message: "permanent failure"
 		},
 		{
-			code: EAI_FAMILY,
+			code: 'EAI_FAMILY',
 			message: "ai_family not supported"
 		},
 		{
-			code: EAI_MEMORY,
+			code: 'EAI_MEMORY',
 			message: "out of memory"
 		},
 		{
-			code: EAI_NODATA,
+			code: 'EAI_NODATA',
 			message: "no address"
 		},
 		{
-			code: EAI_NONAME,
+			code: 'EAI_NONAME',
 			message: "unknown node or service"
 		},
 		{
-			code: EAI_OVERFLOW,
+			code: 'EAI_OVERFLOW',
 			message: "argument buffer overflow"
 		},
 		{
-			code: EAI_PROTOCOL,
+			code: 'EAI_PROTOCOL',
 			message: "resolved protocol is unknown"
 		},
 		{
-			code: EAI_SERVICE,
+			code: 'EAI_SERVICE',
 			message: "service not available for socket type"
 		},
 		{
-			code: EAI_SOCKTYPE,
+			code: 'EAI_SOCKTYPE',
 			message: "socket type not supported"
 		},
 		{
-			code: EALREADY,
+			code: 'EALREADY',
 			message: "connection already in progress"
 		},
 		{
-			code: EBADF,
+			code: 'EBADF',
 			message: "bad file descriptor"
 		},
 		{
-			code: EBUSY,
+			code: 'EBUSY',
 			message: "resource busy or locked"
 		},
 		{
-			code: ECANCELED,
+			code: 'ECANCELED',
 			message: "operation canceled"
 		},
 		{
-			code: ECHARSET,
+			code: 'ECHARSET',
 			message: "invalid Unicode character"
 		},
 		{
-			code: ECONNABORTED,
+			code: 'ECONNABORTED',
 			message: "software caused connection abort"
 		},
 		{
-			code: ECONNREFUSED,
+			code: 'ECONNREFUSED',
 			message: "connection refused"
 		},
 		{
-			code: ECONNRESET,
+			code: 'ECONNRESET',
 			message: "connection reset by peer"
 		},
 		{
-			code: EDESTADDRREQ,
+			code: 'EDESTADDRREQ',
 			message: "destination address required"
 		},
 		{
-			code: EEXIST,
+			code: 'EEXIST',
 			message: "file already exists"
 		},
 		{
-			code: EFAULT,
+			code: 'EFAULT',
 			message: "bad address in system call argument"
 		},
 		{
-			code: EFBIG,
+			code: 'EFBIG',
 			message: "file too large"
 		},
 		{
-			code: EHOSTUNREACH,
+			code: 'EHOSTUNREACH',
 			message: "host is unreachable"
 		},
 		{
-			code: EINTR,
+			code: 'EINTR',
 			message: "interrupted system call"
 		},
 		{
-			code: EINVAL,
+			code: 'EINVAL',
 			message: "invalid argument"
 		},
 		{
-			code: EIO,
+			code: 'EIO',
 			message: "i/o error"
 		},
 		{
-			code: EISCONN,
+			code: 'EISCONN',
 			message: "socket is already connected"
 		},
 		{
-			code: EISDIR,
+			code: 'EISDIR',
 			message: "illegal operation on a directory"
 		},
 		{
-			code: ELOOP,
+			code: 'ELOOP',
 			message: "too many symbolic links encountered"
 		},
 		{
-			code: EMFILE,
+			code: 'EMFILE',
 			message: "too many open files"
 		},
 		{
-			code: EMSGSIZE,
+			code: 'EMSGSIZE',
 			message: "message too long"
 		},
 		{
-			code: ENAMETOOLONG,
+			code: 'ENAMETOOLONG',
 			message: "name too long"
 		},
 		{
-			code: ENETDOWN,
+			code: 'ENETDOWN',
 			message: "network is down"
 		},
 		{
-			code: ENETUNREACH,
+			code: 'ENETUNREACH',
 			message: "network is unreachable"
 		},
 		{
-			code: ENFILE,
+			code: 'ENFILE',
 			message: "file table overflow"
 		},
 		{
-			code: ENOBUFS,
+			code: 'ENOBUFS',
 			message: "no buffer space available"
 		},
 		{
-			code: ENODEV,
+			code: 'ENODEV',
 			message: "no such device"
 		},
 		{
-			code: ENOENT,
+			code: 'ENOENT',
 			message: "no such file or directory"
 		},
 		{
-			code: ENOMEM,
+			code: 'ENOMEM',
 			message: "not enough memory"
 		},
 		{
-			code: ENONET,
+			code: 'ENONET',
 			message: "machine is not on the network"
 		},
 		{
-			code: ENOPROTOOPT,
+			code: 'ENOPROTOOPT',
 			message: "protocol not available"
 		},
 		{
-			code: ENOSPC,
+			code: 'ENOSPC',
 			message: "no space left on device"
 		},
 		{
-			code: ENOSYS,
+			code: 'ENOSYS',
 			message: "function not implemented"
 		},
 		{
-			code: ENOTCONN,
+			code: 'ENOTCONN',
 			message: "socket is not connected"
 		},
 		{
-			code: ENOTDIR,
+			code: 'ENOTDIR',
 			message: "not a directory"
 		},
 		{
-			code: ENOTEMPTY,
+			code: 'ENOTEMPTY',
 			message: "directory not empty"
 		},
 		{
-			code: ENOTSOCK,
+			code: 'ENOTSOCK',
 			message: "socket operation on non-socket"
 		},
 		{
-			code: ENOTSUP,
+			code: 'ENOTSUP',
 			message: "operation not supported on socket"
 		},
 		{
-			code: EPERM,
+			code: 'EPERM',
 			message: "operation not permitted"
 		},
 		{
-			code: EPIPE,
+			code: 'EPIPE',
 			message: "broken pipe"
 		},
 		{
-			code: EPROTO,
+			code: 'EPROTO',
 			message: "protocol error"
 		},
 		{
-			code: EPROTONOSUPPORT,
+			code: 'EPROTONOSUPPORT',
 			message: "protocol not supported"
 		},
 		{
-			code: EPROTOTYPE,
+			code: 'EPROTOTYPE',
 			message: "protocol wrong type for socket"
 		},
 		{
-			code: ERANGE,
+			code: 'ERANGE',
 			message: "result too large"
 		},
 		{
-			code: EROFS,
+			code: 'EROFS',
 			message: "read-only file system"
 		},
 		{
-			code: ESHUTDOWN,
+			code: 'ESHUTDOWN',
 			message: "cannot send after transport endpoint shutdown"
 		},
 		{
-			code: ESPIPE,
+			code: 'ESPIPE',
 			message: "invalid seek"
 		},
 		{
-			code: ESRCH,
+			code: 'ESRCH',
 			message: "no such process"
 		},
 		{
-			code: ETIMEDOUT,
+			code: 'ETIMEDOUT',
 			message: "connection timed out"
 		},
 		{
-			code: ETXTBSY,
+			code: 'ETXTBSY',
 			message: "text file is busy"
 		},
 		{
-			code: EXDEV,
+			code: 'EXDEV',
 			message: "cross-device link not permitted"
 		},
 		{
-			code: UNKNOWN,
+			code: 'UNKNOWN',
 			message: "unknown error"
 		},
 		{
-			code: EOF,
+			code: 'EOF',
 			message: "end of file"
 		},
 		{
-			code: ENXIO,
+			code: 'ENXIO',
 			message: "no such device or address"
 		},
 		{
-			code: EMLINK,
+			code: 'EMLINK',
 			message: "too many links"
 		},
 		{
-			code: EHOSTDOWN,
+			code: 'EHOSTDOWN',
 			message: "host is down"
 		}
 	]
