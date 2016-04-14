@@ -1,5 +1,9 @@
 # err_codes
 
+`err_codes` wraps `libuv`'s error-hashmap in a node.js object. It can be used to pull out error messages
+based on a received error-code / number, or for human-readable aliases of error-codes.
+
+## Usage
 
 ```js
 

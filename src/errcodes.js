@@ -553,7 +553,10 @@ const constants = {
 
 
 
-exports.numbers = constants.libuvErrorMap
+exports.numbers = constants.libuvErrorMap.map(error => {
+	return error.code
+})
+
 exports.codes   = { }
 exports.aliases = { }
 
@@ -562,17 +565,11 @@ exports.aliases = { }
 
 
 constants.libuvErrorMap.forEach(error => {
-	exports.codes[error.code] = error
+	exports.codes[error.code] = error.message
 })
 
 constants.libuvErrorMap.forEach(error => {
 	error.aliases.forEach(alias => {
-		exports.aliases[alias] = error
+		exports.aliases[alias] = error.code
 	})
 })
-
-
-
-
-
-console.log(exports.numbers[67])
